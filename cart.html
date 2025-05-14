@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - Emil Fashion</title>
+  <style>
+    .product { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+
+<h1>Your Cart</h1>
+<div id="cart-items"></div>
+
+<a href="buy-summary.html" target="_blank"><button>Proceed to Buy</button></a>
+
+<script>
+  const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  const container = document.getElementById('cart-items');
+
+  if (cart.length === 0) {
+    container.innerHTML = "<p>Your cart is empty.</p>";
+  } else {
+    cart.forEach((item, index) => {
+      container.innerHTML += `
+        <div class="product">
+          <img src="${item.image}" width="100">
+          <h3>${item.name}</h3>
+          <p>৳${item.price}</p>
+        </div>`;
+    });
+  }
+</script>
+
+</body>
+</html>

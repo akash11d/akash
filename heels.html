@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heels - Emil Fashion</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .product-card p {
+      margin: 0;
+      color: #555;
+    }
+
+    .button-container {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .button-container a,
+    .product-card a {
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: white;
+      display: inline-block;
+      margin: 5px;
+    }
+
+    .view-button {
+      background-color: #19b814;
+    }
+
+    .buy-button {
+      background-color: #000000;
+    }
+
+    .product-card a:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Emil Fashion - Heels Collection</h1>
+  </div>
+
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="hells/hell1.jpg" alt="Heel 1">
+      <h3>Stylish Heel</h3>
+      <h3>999 tk</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell1.jpg&name=Stylish%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell1.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="hells/hell2.jpg" alt="Heel 2">
+      <h3>Classic Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell2.jpg&name=Classic%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell2.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="hells/hell3.jpg" alt="Heel 3">
+      <h3>Fancy Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell3.jpg&name=Fancy%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell3.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+     <!-- Product 4 -->
+    <div class="product-card">
+      <img src="hells/hell4.jpg" alt="Heel 3">
+      <h3>Fancy Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell4.jpg&name=Fancy%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell4.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+     <!-- Product 5 -->
+    <div class="product-card">
+      <img src="hells/hell5.jpg" alt="Heel 3">
+      <h3>Fancy Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell5.jpg&name=Fancy%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell5.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+     <!-- Product 6 -->
+    <div class="product-card">
+      <img src="hells/hell6.jpg" alt="Heel 3">
+      <h3>Fancy Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell6.jpg&name=Fancy%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell6.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+     <!-- Product 7 -->
+    <div class="product-card">
+      <img src="hells/hell8.jpg" alt="Heel 7">
+      <h3>Fancy Heel</h3>
+      <p>Elegant design with modern touch for any occasion.</p>
+      <a href="buy-now.html?image=hells/hell8.jpg&name=Fancy%20Heel&price=1200" class="buy-button" target="_blank">Buy Now</a>
+      <a href="hells/hell8.jpg" class="view-button" target="_blank">View Product</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

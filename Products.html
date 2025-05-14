@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Emil Fashion - Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #111;
+      padding: 15px 30px;
+      color: white;
+      font-size: 24px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .product-name {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .product-price {
+      color: #d33;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 14px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Emil Fashion - Products</header>
+  <section class="product-grid">
+
+<div class="product-card">
+    <img src="image/AKASH1.jpg" alt="Elegant Heels">
+    <h3>Elegant Heels</h3>
+    <p>999 TK</p>
+    <div class="btn-group">
+      <a href="view-product.html?img=image/AKASH1.jpg&name=স্মার্ট হিল&price=1450&details=এই হিল স্যান্ডেলটি আধুনিক ডিজাইনে তৈরি যা যেকোনো অনুষ্ঠানে মানানসই।" class="btn view-btn">View Product</a>
+
+      <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+
+    </div>
+  </div>
+
+
+    <div class="product-card">
+      <img src="image/AKASH2.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="view-product.html?img=image/AKASH2.jpg&name=স্মার্ট হিল&price=1450&details=এই হিল স্যান্ডেলটি আধুনিক ডিজাইনে তৈরি যা যেকোনো অনুষ্ঠানে মানানসই।" class="btn view-btn">View Product</a>          <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+    </div>
+  </div>
+    <div class="product-card">
+      <img src="image/AKASH3.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH3.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH4.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH4.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH5.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH5.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH6.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH6.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH7.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH7.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH9.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH9.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH10.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH10.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH11.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH11.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH12.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH12.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH13.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH13.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH14.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH14.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH15.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH15.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH16.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH16.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH17.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH17.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH18.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH18.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH19.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH19.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH20.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH20.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH21.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH21.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH22.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH22.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH23.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH23.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH24.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH24.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH25.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH25.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH26.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH26.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH27.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH27.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH28.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH28.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH29.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH29.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH30.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH30.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH31.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH31.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'images/product1.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH32.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH32.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'image/AKASH32.jpg')">Buy Now</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="image/AKASH33.jpg" alt="Elegant Heels">
+      <h3>Elegant Heels</h3>
+      <p>999 TK</p>
+      <div class="btn-group">
+        <a href="image/AKASH33.jpg" class="btn view-btn">View Product</a>
+        <button onclick="buyNow('Stylish Heels', 1200, 'Image/AKASH33.jpg')">Buy Now</button>
+      </div>
+    </div>
+</section>
+
+</body>
+</html>
