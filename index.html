@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
 <body>
 
@@ -23,10 +26,11 @@
               <li><a href="pump.html" target="_blank">Pump</a></li>
             </ul>
           </li>
-          
-          <li role="menuitem"><a href="#about">About</a></li>
+         <li> <a href="cart.html">🛒 Cart</a></li>
+
+      
           <li>
-            <a href="https://wa.me/880183516387" target="_blank">
+            <a href="https://wa.me/8801835165387" target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>
@@ -34,6 +38,8 @@
       </nav>
       
   </header>
+  
+
 
   <section class="hero" id="home" aria-label="Hero section">
     <div class="hero-content" role="banner">
@@ -47,44 +53,99 @@
     <h2 class="section-title">Our Collection</h2>
     <div class="products-grid">
 
-      <!-- Product 1 -->
-<div class="product-card">
+<!-- Product 1-->
+ <div class="product-card">
   <img src="image/AKASH1.jpg" alt="Loafers">
   <h3>Classic Brown Loafers</h3>
   <p>Comfortable daily wear with soft lining and leather touch.</p>
 
+  <!-- Buy Now Button -->
   <a href="buy-now.html?image=image/AKASH1.jpg&name=Classic%20Brown%20Loafers&price=999" 
      target="_blank" 
      style="background-color: #e74c3c; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     Buy Now
   </a>
 
+  <!-- View Product Button -->
   <a href="image/AKASH1.jpg" 
      target="_blank" 
      style="background-color: #444; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     View Product
   </a>
+
+  <!-- Add to Cart Button -->
+ 
+ <button onclick="addToCart('Classic Brown Loafers', 999, 'image/AKASH2.jpg')" 
+          style="background-color: #27ae60; color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; margin: 5px;">
+    Add to Cart
+  </button>
 </div>
-  
+
+<!-- Cart Script -->
+<script>
+ function addToCart(name, price, image) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if product already in cart
+  let existing = cart.find(item => item.name === name && item.size === 35);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ name, price, image, quantity: 1, size: 35 }); // default size 35
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " added to cart!");
+}
+
+</script>
+
 <!-- Product 2-->
  <div class="product-card">
   <img src="image/AKASH2.jpg" alt="Loafers">
   <h3>Classic Brown Loafers</h3>
   <p>Comfortable daily wear with soft lining and leather touch.</p>
 
+  <!-- Buy Now Button -->
   <a href="buy-now.html?image=image/AKASH2.jpg&name=Classic%20Brown%20Loafers&price=999" 
      target="_blank" 
      style="background-color: #e74c3c; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     Buy Now
   </a>
 
+  <!-- View Product Button -->
   <a href="image/AKASH2.jpg" 
      target="_blank" 
      style="background-color: #444; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     View Product
   </a>
+
+  <!-- Add to Cart Button -->
+  <button onclick="addToCart('Classic Brown Loafers', 999, 'image/AKASH2.jpg')" 
+          style="background-color: #27ae60; color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; margin: 5px;">
+    Add to Cart
+  </button>
 </div>
-  
+
+<!-- Cart Script -->
+<script>
+ function addToCart(name, price, image) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if product already in cart
+  let existing = cart.find(item => item.name === name && item.size === 35);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ name, price, image, quantity: 1, size: 35 }); // default size 35
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " added to cart!");
+}
+
+</script>
+
 
  <!-- Product 3-->
  <div class="product-card">
@@ -92,19 +153,46 @@
   <h3>Classic Brown Loafers</h3>
   <p>Comfortable daily wear with soft lining and leather touch.</p>
 
-  <a href="buy-now.html?image=image/AKASH2.jpg&name=Classic%20Brown%20Loafers&price=999" 
+  <!-- Buy Now Button -->
+  <a href="buy-now.html?image=image/AKASH3.jpg&name=Classic%20Brown%20Loafers&price=999" 
      target="_blank" 
      style="background-color: #e74c3c; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     Buy Now
   </a>
 
+  <!-- View Product Button -->
   <a href="image/AKASH3.jpg" 
      target="_blank" 
      style="background-color: #444; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; display: inline-block; margin: 5px;">
     View Product
   </a>
+
+  <!-- Add to Cart Button -->
+  <button onclick="addToCart('Classic Brown Loafers', 999, 'image/AKASH3.jpg')" 
+          style="background-color: #27ae60; color: white; padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; margin: 5px;">
+    Add to Cart
+  </button>
 </div>
-  
+
+<!-- Cart Script -->
+<script>
+ function addToCart(name, price, image) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  // Check if product already in cart
+  let existing = cart.find(item => item.name === name && item.size === 35);
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({ name, price, image, quantity: 1, size: 35 }); // default size 35
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert(name + " added to cart!");
+}
+
+</script>
+
 <!-- Product 4 -->
 
  <div class="product-card">
@@ -228,7 +316,15 @@
       menu.classList.toggle('active');
     });
   </script>
-
+<script>
+  function addToCart(name, image, price) {
+    const product = { name, image, price };
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push(product);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${name} added to cart!`);
+  }
+</script>
 
   
   
